@@ -21,6 +21,7 @@ namespace BandplanDownloader
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
+            textBox1.Text = textBox1.Text.Replace("https", "http");
             BandplanParser.BandplanParser.DownloadCSV(textBox1.Text);
             button1.Enabled = true;
             label2.Text = "Download completed.";
