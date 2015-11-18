@@ -139,6 +139,10 @@ namespace FrequencyTracker
                     midchannel = i;
                     break;
                 }
+                if (i == _channels.Count() - 1)
+                {
+                    midchannel = _channels.Count() - 1;
+                }
 
             }
 
